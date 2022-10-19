@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="max-w-[1330px] mx-auto mt-[189px]">
+        <div id="scroll-bar" class="overflow-y-auto flex items-center justify-between">
+            
+            <div class="max-w-[235px] text-[50px] font-PtSans font-bold">
+                <h2 id="text">Gaining Expereince</h2>
+            </div>
+            
+            <div class="h-[750px] rounded-full max-w-[44px] bg-[#4BAEE5] flex flex-col items-center justify-center text-white text-[18px] font-PtSans">
+                <div class="rotate-90 flex space-x-[100px] text-center px-[72px] cursor-pointer">
+              
+                <a id="year2016">2016</a>
+                <a id="year2018">2018</a>
+                <a id="year2020" class="font-bold">2020</a>
+                <a id="year2021">2021</a>
+                <a id="now">Now</a>
+                </div>
+            </div>
+            
+            <div class="font-PtSans text-[18px] w-[419px]"><p id="paragraph">Ibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim</p></div>
+           
+        </div>
+    </section>
+    <script>
+        const first = document.getElementById("year2016");
+        const second = document.getElementById("year2018");
+        const third = document.getElementById("year2020");
+        const fourth = document.getElementById("year2021");
+        const fifth = document.getElementById("now");
+        
+        // function year2016 () {
+        //     // change.classList.remove("font-bold");
+        //     // change.classList.add("font-bold");
+        //     first.classList.add("font-bold");
+        // }
+    first.addEventListener("click", ()=>{
+        
+        first.classList.add("font-bold");
+        second.classList.remove("font-bold");
+        third.classList.remove("font-bold");
+        fourth.classList.remove("font-bold");
+        fifth.classList.remove("font-bold");
+        text.textContent = 'text is changed'
+        paragraph.textContent = 'lorem ipmusm sadnasnd hahahaha yoyoyo'
+})
+    second.addEventListener("click", ()=>{
+        
+        second.classList.add("font-bold");
+        first.classList.remove("font-bold");
+        third.classList.remove("font-bold");
+        fourth.classList.remove("font-bold");
+        fifth.classList.remove("font-bold");
+        text.textContent = 'text is changed second time'
+        paragraph.textContent = 'paragraph is changed'
+})
+    third.addEventListener("click", ()=>{
+        
+        third.classList.add("font-bold");
+        second.classList.remove("font-bold");
+        first.classList.remove("font-bold");
+        fourth.classList.remove("font-bold");
+        fifth.classList.remove("font-bold");
+        text.textContent = 'Gaining Expereince'
+        paragraph.textContent = 'Ibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim'
+})
+    fourth.addEventListener("click", ()=>{
+        
+        fourth.classList.add("font-bold");
+        second.classList.remove("font-bold");
+        third.classList.remove("font-bold");
+        first.classList.remove("font-bold");
+        fifth.classList.remove("font-bold");
+        text.textContent = 'text is changed fourth time'
+        paragraph.textContent = 'paragraph is changed'
+})
+    fifth.addEventListener("click", ()=>{
+        
+        fifth.classList.add("font-bold");
+        second.classList.remove("font-bold");
+        third.classList.remove("font-bold");
+        fourth.classList.remove("font-bold");
+        first.classList.remove("font-bold");
+        text.textContent = 'text is changed fifth time'
+        paragraph.textContent = 'paragraph is changed'
+})
+    document.getElementById("scroll-bar").addEventListener("scroll", evt => 
+    console.log(evt.target.scrollTop)
+)
+    
+    </script>
+</body>
+</html>
